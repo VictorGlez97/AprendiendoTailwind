@@ -27,10 +27,10 @@
             </a>
 
             <input type="checkbox" id="menu" class="peer hidden">
-            <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50"> </label>
+            <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"> </label>
 
-            <div class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform">
-                <ul class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl">
+            <div class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:bg-none md:translate-x-0">
+                <ul class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static">
                     <li>
                         <a href="#"> Pricing </a>
                     </li>
@@ -49,10 +49,54 @@
                 </ul>
             </div>
 
-            <a href="#" class="button shadow-sm shadow-brigth-red/30 hidden"> Get started </a>
+            <a href="#" class="button shadow-sm shadow-brigth-red/30 hidden py-3 lg:block"> Get started </a>
 
         </nav>
+
+        <section class="wrapper grid gap-8 justify-items-center items-center pb-12 md:grid-cols-2 md:py-24">
+            <img src="./img/illustration-intro.svg" alt="" class="w-full max-w-lg md:order-1">
+            <article class="text-center space-y-6 md:text-left md:space-y-8">
+                <h1 class="text-4xl font-bold text-very-dark-blue md:text-5xl"> Bring everyone together to build better products. </h1>
+                <p class="text-dark-grayish-blue"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, tempore, non illum blanditiis commodi tempora saepe aspernatur sequi dolores consequatur sunt omnis quod distinctio at repudiandae pariatur? Deleniti, voluptatem repudiandae. </p>
+                <a href="" class="button mx-auto shadow-xl shadow-brigth-red/30 md:mx-0">Get Started</a>
+            </article>
+        </section>
     </header>
+
+    <main>
+        <section class="wrapper text-center py-24 grid gap-12 md:grid-cols-2 md:text-left">
+            <article>
+                <h2 class="text-3xl font-bold text-very-dark-blue mb-6 md:text-4xl"> What´s different about Manage? </h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, mollitia totam nihil facilis natus ad consequatur? Optio illo reprehenderit alias? Iste, libero magnam error molestias obcaecati laudantium dolorem? Nulla, eligendi? </p>
+            </article>
+
+            <div class="grid gap-12">
+                <article class="space-y-4 md:space-y-6">
+                    <p class="bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent">
+                        <span class="bg-brigth-red text-white px-6 rounded-full py-2">01</span>
+                        <span class="flex-1 p-2">Track company-wide progress</span>
+                        <p class="text-dark-grayish-blue text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos similique esse et cum recusandae assumenda? Aspernatur optio facere nihil quo quibusdam ullam magni dolor delectus deleniti, officia sint, voluptate aut.</p>
+                    </p>
+                </article>
+
+                <article class="space-y-4 md:space-y-6">
+                    <p class="bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent">
+                        <span class="bg-brigth-red text-white px-6 rounded-full py-2">02</span>
+                        <span class="flex-1 p-2">Advanced built-in reports</span>
+                        <p class="text-dark-grayish-blue text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos similique esse et cum recusandae assumenda? Aspernatur optio facere nihil quo quibusdam ullam magni dolor delectus deleniti, officia sint, voluptate aut.</p>
+                    </p>
+                </article>
+
+                <article class="space-y-4 md:space-y-6">
+                    <p class="bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent">
+                        <span class="bg-brigth-red text-white px-6 rounded-full py-2">03</span>
+                        <span class="flex-1 p-2">Everything you need in one place</span>
+                        <p class="text-dark-grayish-blue text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos similique esse et cum recusandae assumenda? Aspernatur optio facere nihil quo quibusdam ullam magni dolor delectus deleniti, officia sint, voluptate aut.</p>
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
